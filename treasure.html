@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Treasure page</title>
+  <title>Treasure html page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -87,25 +87,17 @@
 
     var clickCount = 0;
     var treasureLocation = 18;
-    var treasureLocation = getRandomIntInclusive(0, 24);
+    
         console.log(treasureLocation);
 
 
-        function newGame() {
-            var clickCount = 0;
-            var treasureLocation = getRandomIntInclusive(0, 24);
-            console.log(treasureLocation);
-            document.getElementById("clicks").innerHTML = "Number of clicks is " + clickCount + ".";
-
-            document.getElementById("distance").innerHTML = "Distance is unknown.";
-        }
     
   
     function makeGuess(position){
         id = ids[position]
         imgPosition = document.getElementById(id)
         if(position == treasureLocation){
-            imgPosition.src = "coin.PNG"
+            imgPosition.src = "treasure.jpg"
         }
         else{
             imgPosition.src = "emptybox.PNG"
